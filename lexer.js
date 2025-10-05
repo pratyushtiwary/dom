@@ -1,4 +1,15 @@
-const inputString = `<p test="1 2" disabled=true abc xyz>Test < <b test xyz="test"><p>Test</p></b> <p>Test</p> test</p>`;
+// TODO: Handle user added void tags
+const inputString = `<html lang="en"><head><meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"></head> <body><xyz xyz>test</body></html>`;
+// const inputString = `<p test="1 2" disabled=true abc xyz>Test < <p><b>Test</b></p> <meta xyz>test</p>`;
+// const inputString = `<p test="1 2" disabled=true abc xyz>Test < <p><b>Test</b></p> <meta xyz>test</p>`;
+// const inputString = `<p test="1 2" disabled=true abc xyz>Test < <b test xyz="test"><p>Test</p></b> <p>Test</p> test</p>`;
+// const inputString = `
+// <body>
+//   <xyz>
+//   test
+//   <test>
+//   abc
+// </body>`;
 // const inputString = `<p test="1" xyz>Test test</p>`;
 // const inputString = `<img src=test>`;
 
@@ -14,12 +25,32 @@ const NESTED = "NESTED";
 const NESTED_TAG = NESTED + TAG;
 const NESTED_TAG_END = NESTED_TAG + END_CHAR;
 const NESTED_ANCHOR_START = NESTED + ANCHOR_START;
+const NESTED_ATTR = NESTED + ATTR;
 const ATTR_SEP = "=";
 const SEP = " ";
 const DOUBLE_QUOTE = '"';
 const SINGLE_QUOTE = "'";
 const TEXT_NODE = "TEXT";
 const ELEMENT_NODE = "ELEMENT";
+
+const VOID_TAGS = new Set([
+  "area",
+  "base",
+  "br",
+  "col",
+  "command",
+  "embed",
+  "hr",
+  "img",
+  "input",
+  "keygen",
+  "link",
+  "meta",
+  "param",
+  "source",
+  "track",
+  "wbr",
+]);
 
 // composables
 function removeQuotes(inputString, quoteChar = undefined) {
@@ -94,11 +125,20 @@ function isSep(state, char) {
 }
 
 function isTagBodyStarting(state, char, tagName) {
-  return state !== CONTENT && state !== NESTED_TAG_END && char === ANCHOR_END;
+  return (
+    state !== CONTENT &&
+    state !== NESTED_TAG_END &&
+    state !== NESTED_TAG &&
+    state !== NESTED_ATTR &&
+    char === ANCHOR_END
+  );
 }
 
 function isContentEnd(state, char) {
-  return (state === CONTENT || state === NESTED_ANCHOR_START) && char === ANCHOR_START;
+  return (
+    (state === CONTENT || state === NESTED_ANCHOR_START) &&
+    char === ANCHOR_START
+  );
 }
 
 function isWithinQuotes(char) {
@@ -116,7 +156,7 @@ function getAttr(inputString, startIdx, endIdx) {
 function createTextNode(text) {
   return {
     type: TEXT_NODE,
-    content: text
+    content: text,
   };
 }
 
@@ -125,8 +165,12 @@ function createElementNode(tag, data, children) {
     type: ELEMENT_NODE,
     tag,
     data,
-    children
+    children,
   };
+}
+
+function isVoidTag(tagName) {
+  return VOID_TAGS.has(tagName);
 }
 
 function parseSingleHtmlString(inputString) {
@@ -141,7 +185,10 @@ function parseSingleHtmlString(inputString) {
     withinQuotes = false,
     quoteChar,
     contentStartIdx,
-    nestingIndentCount = 0;
+    nestingIndentCount = 0,
+    nestedTagName,
+    isNestedTagVoid = false,
+    nestedTagStartIdx;
 
   // main loop
   for (let currCharIdx = 0; currCharIdx < inputString.length; currCharIdx++) {
@@ -225,7 +272,10 @@ function parseSingleHtmlString(inputString) {
       continue;
     }
 
-    if (state === CONTENT && currChar === ANCHOR_START) {
+    if (
+      (state === CONTENT || state === NESTED_TAG) &&
+      currChar === ANCHOR_START
+    ) {
       state = NESTED_ANCHOR_START;
       continue;
     }
@@ -250,6 +300,18 @@ function parseSingleHtmlString(inputString) {
       continue;
     }
 
+    if (state === NESTED_ATTR && isNestedTagVoid && currChar === ANCHOR_END) {
+      nestingIndentCount -= 1;
+      contentStartIdx = currCharIdx + 1;
+      state = CONTENT;
+      if (nestingIndentCount === 0) {
+        children.push(
+          parseSingleHtmlString(inputString.slice(stateStartIdx, currCharIdx + 1))
+        );
+      }
+      continue;
+    }
+
     if (
       state === NESTED_ANCHOR_START &&
       currChar !== SEP &&
@@ -264,21 +326,37 @@ function parseSingleHtmlString(inputString) {
         const content = inputString.slice(contentStartIdx, currCharIdx - 1);
         children.push(createTextNode(content));
       }
+      nestedTagStartIdx = currCharIdx - 1; // -1 to include <
       state = NESTED_TAG;
       nestingIndentCount += 1;
       continue;
     } else if (state === NESTED_ANCHOR_START) {
       state = CONTENT;
+      continue;
+    }
+
+    if (state === NESTED_TAG && (currChar === SEP || currChar === ANCHOR_END)) {
+      nestedTagName = inputString.slice(nestedTagStartIdx + 1, currCharIdx);
+      isNestedTagVoid = isVoidTag(nestedTagName);
+      
+      if (!isNestedTagVoid) {
+        continue;
+      }
+      
+      if (currChar === ANCHOR_END) {
+        children.push(createElementNode(nestedTagName, {}, []));
+        contentStartIdx = currCharIdx + 1;
+        nestingIndentCount -= 1;
+        state = CONTENT;
+      } else {
+        state = NESTED_ATTR;
+      }
     }
   }
 
-  return createElementNode(
-    tagName,
-    data,
-    children
-  );
+  return createElementNode(tagName, data, children);
 }
 
 const parsedNode = parseSingleHtmlString(inputString);
 
-console.log(parsedNode);
+console.log(JSON.stringify(parsedNode, null, 4));
