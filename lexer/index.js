@@ -261,11 +261,15 @@ function parseHtml(inputString, depth = 0) {
       const endTag = inputString.substring(tempStateData, currCharIdx);
 
       if (endTag === tagName) {
-        const content = inputString.substring(stateStartIdx, currCharIdx + 1);
-        children.push(...parseHtml(content, depth + 1));
+        const content = inputString.substring(stateStartIdx, currCharIdx - tagName.length - 2);
+        nodes.push(createElementNode(tagName, data, [...children, ...parseHtml(content, depth + 1)]));
+        // this branch is taken when we found closing of our main tag name, hence this means that current context node needs to be closed, so we reset all the state machine context here
         stateStartIdx = currCharIdx + 1;
         contentStartIdx = currCharIdx + 1;
-        state = CONTENT;
+        state = undefined;
+        tagName = "";
+        data = {};
+        children = [];
       } else {
         state = USER_DEFINED_VOID_TAG;
       }
@@ -283,7 +287,7 @@ function parseHtml(inputString, depth = 0) {
         // only set start when outer tag starts, this handles cases like `<p><b>Test</b></p>` in such cases we need idx of first <
         stateStartIdx = currCharIdx - 1; // -1 to include anchor tag
         // save all the text seen till now
-        const content = inputString.slice(contentStartIdx, currCharIdx - 1);
+        const content = inputString.substring(contentStartIdx, currCharIdx - 1);
         if (content !== "") {
           children.push(createTextNode(content));
         }
@@ -334,7 +338,7 @@ function parseHtml(inputString, depth = 0) {
   if (state === NESTED_TAG || state === USER_DEFINED_VOID_TAG) {
     // this likely means inputString only contains nested tags
     const content = inputString.substring(stateStartIdx);
-    children.push(...parseHtml(content, depth + 1));
+    children.push(...parseHtml(content, depth));
   } else if (state === CONTENT) {
     // this means we only have content inside input string, dump content as text node
     const content = inputString.slice(contentStartIdx);
