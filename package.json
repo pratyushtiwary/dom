@@ -1,0 +1,15 @@
+{
+  "name": "dom",
+  "version": "1.0.0",
+  "description": "Purpose: Implementing internals of browser to gain deeper understanding of rendering works",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest"
+  },
+  "keywords": [],
+  "author": "Pratyush Tiwary",
+  "license": "ISC",
+  "devDependencies": {
+    "vitest": "^3.2.4"
+  }
+}

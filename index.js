@@ -25,6 +25,6 @@ div.classList.add('test');
 
 body.appendChild(div);
 
-document.print()
+document.print();
 
 console.log('div.test = ',document.querySelector('div')?.toString());

@@ -140,6 +140,18 @@ function isVoidTag(tagName) {
   return VOID_TAGS.has(tagName);
 }
 
+function appendTextNode(nodesDir, content) {
+  if (content === "") return;
+
+  nodesDir.push(createTextNode(content));
+}
+
+function appendElementNode(nodesDir, content, parseMethod) {
+  if (content === "") return;
+
+  nodesDir.push(...parseMethod(content));
+}
+
 module.exports = {
   removeQuotes,
   isAnchorStart,
@@ -158,4 +170,6 @@ module.exports = {
   createTextNode,
   createElementNode,
   isVoidTag,
+  appendTextNode,
+  appendElementNode,
 };

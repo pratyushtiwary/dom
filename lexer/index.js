@@ -47,6 +47,8 @@ const {
   createTextNode,
   createElementNode,
   isVoidTag,
+  appendTextNode,
+  appendElementNode,
 } = require("./utils");
 
 const UserVoidTagsMap = require("./userVoidTagsMap");
@@ -56,11 +58,10 @@ const USER_DEFINED_VOID_TAGS = new UserVoidTagsMap();
 /**
  * Given an input string this function return AST generated from the passed input string which tries to closely represent the string in tree format
  * @param {String} inputString - input html string
- * @param {number} depth - defaults to 0, used to maintain internal depth levels
  * @returns 
  */
-function parseHtml(inputString, depth = 0) {
-  if (!inputString.match(/\<([a-z0-9\"\'\.\,\=\-\s])*\>/i)) {
+function parseHtml(inputString) {
+  if (!inputString.match(/\<([a-z0-9\"\'\.\:\/\,\=\-\s])*\>/i)) {
     return [createTextNode(inputString)];
   }
 
@@ -81,6 +82,17 @@ function parseHtml(inputString, depth = 0) {
     nestedTagName,
     isNestedTagVoid = false,
     nestedTagStartIdx;
+  
+  //TODO: Move state related stuff to StateMachine class
+  function resetState(currCharIdx) {
+    stateStartIdx = currCharIdx + 1;
+    contentStartIdx = currCharIdx + 1;
+    state = undefined;
+    tagName = "";
+    data = {};
+    children = [];
+    nestingIndentCount = 0;
+  }
 
   // main loop
   for (let currCharIdx = 0; currCharIdx < inputString.length; currCharIdx++) {
@@ -99,9 +111,7 @@ function parseHtml(inputString, depth = 0) {
       // add any text node before anchor tag
       const content = inputString.substring(contentStartIdx, currCharIdx - 1);
 
-      if (content !== "") {
-        nodes.push(createTextNode(content));
-      }
+      appendTextNode(nodes, content);
       state = TAG;
       stateStartIdx = currCharIdx;
       continue;
@@ -182,9 +192,7 @@ function parseHtml(inputString, depth = 0) {
     if (state === NESTED_ANCHOR_START && currChar === END_CHAR) {
       if (nestingIndentCount === 0) {
         const content = inputString.substring(contentStartIdx, currCharIdx - 1);
-        if (content !== "") {
-          children.push(...parseHtml(content));
-        }
+        appendElementNode(children, content, parseHtml);
       }
       state = NESTED_TAG_END;
       tempStateData = currCharIdx + 1;
@@ -200,7 +208,7 @@ function parseHtml(inputString, depth = 0) {
 
       if (nestingIndentCount - USER_DEFINED_VOID_TAGS.size === 0) {
         const nestedContent = inputString.substring(stateStartIdx, currCharIdx + 1); // +1 to include >
-        children.push(...parseHtml(nestedContent, depth + 1));
+        appendElementNode(children, nestedContent, parseHtml);
         USER_DEFINED_VOID_TAGS.clear();
         nestingIndentCount = 0;
       }
@@ -210,11 +218,7 @@ function parseHtml(inputString, depth = 0) {
         nestedTagName === tagName
       ) {
         nodes.push(createElementNode(tagName, data, children));
-        tagName = "";
-        data = {};
-        children = [];
-        state = undefined;
-        nestingIndentCount = 0;
+        resetState(currCharIdx);
       } else {
         state = CONTENT;
       }
@@ -228,17 +232,12 @@ function parseHtml(inputString, depth = 0) {
       state = CONTENT;
       if (nestingIndentCount === 0) {
         const content = inputString.substring(stateStartIdx, currCharIdx + 1);
-        children.push(...parseHtml(content, depth + 1));
+        appendElementNode(children, content, parseHtml);
       }
 
       if (nestingIndentCount === -1) {
         nodes.push(createElementNode(tagName, data, children));
-        tagName = "";
-        data = {};
-        children = []
-        state = undefined;
-        nestingIndentCount = 0;
-        contentStartIdx = currCharIdx + 1;
+        resetState(currCharIdx);
       }
       continue;
     }
@@ -262,14 +261,9 @@ function parseHtml(inputString, depth = 0) {
 
       if (endTag === tagName) {
         const content = inputString.substring(stateStartIdx, currCharIdx - tagName.length - 2);
-        nodes.push(createElementNode(tagName, data, [...children, ...parseHtml(content, depth + 1)]));
+        nodes.push(createElementNode(tagName, data, [...children, ...parseHtml(content)]));
         // this branch is taken when we found closing of our main tag name, hence this means that current context node needs to be closed, so we reset all the state machine context here
-        stateStartIdx = currCharIdx + 1;
-        contentStartIdx = currCharIdx + 1;
-        state = undefined;
-        tagName = "";
-        data = {};
-        children = [];
+        resetState(currCharIdx);
       } else {
         state = USER_DEFINED_VOID_TAG;
       }
@@ -338,7 +332,7 @@ function parseHtml(inputString, depth = 0) {
   if (state === NESTED_TAG || state === USER_DEFINED_VOID_TAG) {
     // this likely means inputString only contains nested tags
     const content = inputString.substring(stateStartIdx);
-    children.push(...parseHtml(content, depth));
+    appendElementNode(children, content, parseHtml);
   } else if (state === CONTENT) {
     // this means we only have content inside input string, dump content as text node
     const content = inputString.slice(contentStartIdx);
