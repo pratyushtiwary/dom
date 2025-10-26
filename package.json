@@ -4,12 +4,14 @@
   "description": "Purpose: Implementing internals of browser to gain deeper understanding of rendering works",
   "main": "index.js",
   "scripts": {
-    "test": "vitest"
+    "test": "vitest",
+    "coverage": "vitest run --coverage"
   },
   "keywords": [],
   "author": "Pratyush Tiwary",
   "license": "ISC",
   "devDependencies": {
+    "@vitest/coverage-v8": "^3.2.4",
     "vitest": "^3.2.4"
   }
 }

@@ -21,7 +21,7 @@ class UserVoidTagsMap {
 			this._size -= 1;
 		}
 
-		if (value > 0) {
+		if (value > 1) {
 			this._store.set(key, value - 1);
 			return;
 		}

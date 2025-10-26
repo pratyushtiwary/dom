@@ -1,0 +1,47 @@
+import { expect, describe, it } from "vitest";
+import { createElementNode } from "../../lexer/utils";
+import { ELEMENT_NODE } from "../../lexer/consts";
+
+describe("createElementNode", () => {
+  it.each([
+    {
+      tag: "test",
+      data: {
+        abc: true,
+        xyz: "1",
+      },
+      children: [],
+      output: {
+        type: ELEMENT_NODE,
+        tag: "test",
+        data: {
+          abc: true,
+          xyz: "1",
+        },
+        children: [],
+      },
+    },
+    {
+      tag: "test",
+      data: {
+        abc: true,
+        xyz: "1",
+      },
+      children: [1, 2, 3, 4],
+      output: {
+        type: ELEMENT_NODE,
+        tag: "test",
+        data: {
+          abc: true,
+          xyz: "1",
+        },
+        children: [1, 2, 3, 4],
+      },
+    },
+  ])(
+    "should correctly create new element node",
+    ({ tag, data, children, output }) => {
+      expect(createElementNode(tag, data, children)).toStrictEqual(output);
+    }
+  );
+});

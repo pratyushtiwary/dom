@@ -90,7 +90,7 @@ function isSep(state, char) {
   return state === SEP && char === SEP;
 }
 
-function isTagBodyStarting(state, char, tagName) {
+function isTagBodyStarting(state, char) {
   return (
     state !== CONTENT &&
     state !== NESTED_TAG_END &&
