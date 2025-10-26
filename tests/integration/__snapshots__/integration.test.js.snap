@@ -5,13 +5,13 @@ exports[`Integration test > should correctly parse input html file 1`] = `
   {
     "children": [
       {
-        "content": ""\\r\\n  "",
+        "content": ""\\n  "",
         "type": "TEXT",
       },
       {
         "children": [
           {
-            "content": ""\\r\\n    "",
+            "content": ""\\n    "",
             "type": "TEXT",
           },
           {
@@ -24,7 +24,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
             "type": "ELEMENT",
           },
           {
-            "content": ""\\r\\n    "",
+            "content": ""\\n    "",
             "type": "TEXT",
           },
           {
@@ -39,7 +39,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
             "type": "ELEMENT",
           },
           {
-            "content": ""\\r\\n  "",
+            "content": ""\\n  "",
             "type": "TEXT",
           },
         ],
@@ -48,19 +48,19 @@ exports[`Integration test > should correctly parse input html file 1`] = `
         "type": "ELEMENT",
       },
       {
-        "content": ""\\r\\n  "",
+        "content": ""\\n  "",
         "type": "TEXT",
       },
       {
         "children": [
           {
-            "content": ""\\r\\n    "",
+            "content": ""\\n    "",
             "type": "TEXT",
           },
           {
             "children": [
               {
-                "content": ""\\r\\n      "",
+                "content": ""\\n      "",
                 "type": "TEXT",
               },
               {
@@ -75,7 +75,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                 "type": "ELEMENT",
               },
               {
-                "content": ""\\r\\n      "",
+                "content": ""\\n      "",
                 "type": "TEXT",
               },
               {
@@ -101,7 +101,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                 "type": "ELEMENT",
               },
               {
-                "content": ""\\r\\n    "",
+                "content": ""\\n    "",
                 "type": "TEXT",
               },
             ],
@@ -110,19 +110,19 @@ exports[`Integration test > should correctly parse input html file 1`] = `
             "type": "ELEMENT",
           },
           {
-            "content": ""\\r\\n    "",
+            "content": ""\\n    "",
             "type": "TEXT",
           },
           {
             "children": [
               {
-                "content": ""\\r\\n      "",
+                "content": ""\\n      "",
                 "type": "TEXT",
               },
               {
                 "children": [
                   {
-                    "content": ""\\r\\n        "",
+                    "content": ""\\n        "",
                     "type": "TEXT",
                   },
                   {
@@ -137,7 +137,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                     "type": "ELEMENT",
                   },
                   {
-                    "content": ""\\r\\n        "",
+                    "content": ""\\n        "",
                     "type": "TEXT",
                   },
                   {
@@ -152,7 +152,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                     "type": "ELEMENT",
                   },
                   {
-                    "content": ""\\r\\n        "",
+                    "content": ""\\n        "",
                     "type": "TEXT",
                   },
                   {
@@ -167,7 +167,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                     "type": "ELEMENT",
                   },
                   {
-                    "content": ""\\r\\n        "",
+                    "content": ""\\n        "",
                     "type": "TEXT",
                   },
                   {
@@ -182,7 +182,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                     "type": "ELEMENT",
                   },
                   {
-                    "content": ""\\r\\n        "",
+                    "content": ""\\n        "",
                     "type": "TEXT",
                   },
                   {
@@ -197,7 +197,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                     "type": "ELEMENT",
                   },
                   {
-                    "content": ""\\r\\n        "",
+                    "content": ""\\n        "",
                     "type": "TEXT",
                   },
                   {
@@ -212,7 +212,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                     "type": "ELEMENT",
                   },
                   {
-                    "content": ""\\r\\n        "",
+                    "content": ""\\n        "",
                     "type": "TEXT",
                   },
                   {
@@ -227,7 +227,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                     "type": "ELEMENT",
                   },
                   {
-                    "content": ""\\r\\n        "",
+                    "content": ""\\n        "",
                     "type": "TEXT",
                   },
                   {
@@ -242,7 +242,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                     "type": "ELEMENT",
                   },
                   {
-                    "content": ""\\r\\n        "",
+                    "content": ""\\n        "",
                     "type": "TEXT",
                   },
                   {
@@ -257,7 +257,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                     "type": "ELEMENT",
                   },
                   {
-                    "content": ""\\r\\n        "",
+                    "content": ""\\n        "",
                     "type": "TEXT",
                   },
                   {
@@ -272,7 +272,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                     "type": "ELEMENT",
                   },
                   {
-                    "content": ""\\r\\n        "",
+                    "content": ""\\n        "",
                     "type": "TEXT",
                   },
                   {
@@ -287,7 +287,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                     "type": "ELEMENT",
                   },
                   {
-                    "content": ""\\r\\n        "",
+                    "content": ""\\n        "",
                     "type": "TEXT",
                   },
                   {
@@ -302,7 +302,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                     "type": "ELEMENT",
                   },
                   {
-                    "content": ""\\r\\n      "",
+                    "content": ""\\n      "",
                     "type": "TEXT",
                   },
                 ],
@@ -313,13 +313,13 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                 "type": "ELEMENT",
               },
               {
-                "content": ""\\r\\n      "",
+                "content": ""\\n      "",
                 "type": "TEXT",
               },
               {
                 "children": [
                   {
-                    "content": ""\\r\\n        "",
+                    "content": ""\\n        "",
                     "type": "TEXT",
                   },
                   {
@@ -334,13 +334,13 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                     "type": "ELEMENT",
                   },
                   {
-                    "content": ""\\r\\n        "",
+                    "content": ""\\n        "",
                     "type": "TEXT",
                   },
                   {
                     "children": [
                       {
-                        "content": ""\\r\\n          This is a normal paragraph ("",
+                        "content": ""\\n          This is a normal paragraph ("",
                         "type": "TEXT",
                       },
                       {
@@ -370,7 +370,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                         "type": "ELEMENT",
                       },
                       {
-                        "content": "".  You can use it for various other purposes as well, like just checking how your browser displays various HTML elements by default.  It can also be useful when testing conversions from HTML format to other formats, since some elements can go wrong then.\\r\\n        "",
+                        "content": "".  You can use it for various other purposes as well, like just checking how your browser displays various HTML elements by default.  It can also be useful when testing conversions from HTML format to other formats, since some elements can go wrong then.\\n        "",
                         "type": "TEXT",
                       },
                     ],
@@ -379,13 +379,13 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                     "type": "ELEMENT",
                   },
                   {
-                    "content": ""\\r\\n        "",
+                    "content": ""\\n        "",
                     "type": "TEXT",
                   },
                   {
                     "children": [
                       {
-                        "content": ""\\r\\n          This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.\\r\\n        "",
+                        "content": ""\\n          This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.\\n        "",
                         "type": "TEXT",
                       },
                     ],
@@ -394,7 +394,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                     "type": "ELEMENT",
                   },
                   {
-                    "content": ""\\r\\n        "",
+                    "content": ""\\n        "",
                     "type": "TEXT",
                   },
                   {
@@ -439,19 +439,19 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                     "type": "ELEMENT",
                   },
                   {
-                    "content": ""\\r\\n        "",
+                    "content": ""\\n        "",
                     "type": "TEXT",
                   },
                   {
                     "children": [
                       {
-                        "content": ""\\r\\n          "",
+                        "content": ""\\n          "",
                         "type": "TEXT",
                       },
                       {
                         "children": [
                           {
-                            "content": ""\\r\\n            This is a block quotation containing a single paragraph. Well, not quite, since this is not "",
+                            "content": ""\\n            This is a block quotation containing a single paragraph. Well, not quite, since this is not "",
                             "type": "TEXT",
                           },
                           {
@@ -466,7 +466,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                             "type": "ELEMENT",
                           },
                           {
-                            "content": "" quoted text, but I hope you understand the point. After all, this page does not use HTML markup very normally anyway.\\r\\n          "",
+                            "content": "" quoted text, but I hope you understand the point. After all, this page does not use HTML markup very normally anyway.\\n          "",
                             "type": "TEXT",
                           },
                         ],
@@ -475,7 +475,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                         "type": "ELEMENT",
                       },
                       {
-                        "content": ""\\r\\n        "",
+                        "content": ""\\n        "",
                         "type": "TEXT",
                       },
                     ],
@@ -484,7 +484,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                     "type": "ELEMENT",
                   },
                   {
-                    "content": ""\\r\\n        "",
+                    "content": ""\\n        "",
                     "type": "TEXT",
                   },
                   {
@@ -514,13 +514,13 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                     "type": "ELEMENT",
                   },
                   {
-                    "content": ""\\r\\n        "",
+                    "content": ""\\n        "",
                     "type": "TEXT",
                   },
                   {
                     "children": [
                       {
-                        "content": ""\\r\\n          "",
+                        "content": ""\\n          "",
                         "type": "TEXT",
                       },
                       {
@@ -539,7 +539,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                         "type": "ELEMENT",
                       },
                       {
-                        "content": "",\\r\\n          "",
+                        "content": "",\\n          "",
                         "type": "TEXT",
                       },
                       {
@@ -562,7 +562,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                         "type": "ELEMENT",
                       },
                       {
-                        "content": ""\\r\\n            3 Rue Jules Ferry, Neuilly Sur Seine, France 94000\\r\\n        "",
+                        "content": ""\\n            3 Rue Jules Ferry, Neuilly Sur Seine, France 94000\\n        "",
                         "type": "TEXT",
                       },
                     ],
@@ -571,7 +571,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                     "type": "ELEMENT",
                   },
                   {
-                    "content": ""\\r\\n      "",
+                    "content": ""\\n      "",
                     "type": "TEXT",
                   },
                 ],
@@ -580,13 +580,13 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                 "type": "ELEMENT",
               },
               {
-                "content": ""\\r\\n      "",
+                "content": ""\\n      "",
                 "type": "TEXT",
               },
               {
                 "children": [
                   {
-                    "content": ""\\r\\n        "",
+                    "content": ""\\n        "",
                     "type": "TEXT",
                   },
                   {
@@ -601,13 +601,13 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                     "type": "ELEMENT",
                   },
                   {
-                    "content": ""\\r\\n        "",
+                    "content": ""\\n        "",
                     "type": "TEXT",
                   },
                   {
                     "children": [
                       {
-                        "content": ""\\r\\n          This is a paragraph before an "",
+                        "content": ""\\n          This is a paragraph before an "",
                         "type": "TEXT",
                       },
                       {
@@ -637,7 +637,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                         "type": "ELEMENT",
                       },
                       {
-                        "content": ""). Note that the spacing between a paragraph and a list before or after that is hard to tune in a user style sheet. You can't guess which paragraphs are logically related to a list, e.g. as a \\"list header\\".\\r\\n        "",
+                        "content": ""). Note that the spacing between a paragraph and a list before or after that is hard to tune in a user style sheet. You can't guess which paragraphs are logically related to a list, e.g. as a \\"list header\\".\\n        "",
                         "type": "TEXT",
                       },
                     ],
@@ -646,13 +646,13 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                     "type": "ELEMENT",
                   },
                   {
-                    "content": ""\\r\\n        "",
+                    "content": ""\\n        "",
                     "type": "TEXT",
                   },
                   {
                     "children": [
                       {
-                        "content": ""\\r\\n          "",
+                        "content": ""\\n          "",
                         "type": "TEXT",
                       },
                       {
@@ -667,7 +667,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                         "type": "ELEMENT",
                       },
                       {
-                        "content": ""\\r\\n          "",
+                        "content": ""\\n          "",
                         "type": "TEXT",
                       },
                       {
@@ -682,7 +682,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                         "type": "ELEMENT",
                       },
                       {
-                        "content": ""\\r\\n          "",
+                        "content": ""\\n          "",
                         "type": "TEXT",
                       },
                       {
@@ -697,7 +697,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                         "type": "ELEMENT",
                       },
                       {
-                        "content": ""\\r\\n          "",
+                        "content": ""\\n          "",
                         "type": "TEXT",
                       },
                       {
@@ -712,7 +712,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                         "type": "ELEMENT",
                       },
                       {
-                        "content": ""\\r\\n        "",
+                        "content": ""\\n        "",
                         "type": "TEXT",
                       },
                     ],
@@ -721,7 +721,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                     "type": "ELEMENT",
                   },
                   {
-                    "content": ""\\r\\n        "",
+                    "content": ""\\n        "",
                     "type": "TEXT",
                   },
                   {
@@ -751,13 +751,13 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                     "type": "ELEMENT",
                   },
                   {
-                    "content": ""\\r\\n        "",
+                    "content": ""\\n        "",
                     "type": "TEXT",
                   },
                   {
                     "children": [
                       {
-                        "content": ""\\r\\n          "",
+                        "content": ""\\n          "",
                         "type": "TEXT",
                       },
                       {
@@ -772,7 +772,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                         "type": "ELEMENT",
                       },
                       {
-                        "content": ""\\r\\n          "",
+                        "content": ""\\n          "",
                         "type": "TEXT",
                       },
                       {
@@ -787,7 +787,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                         "type": "ELEMENT",
                       },
                       {
-                        "content": ""\\r\\n          "",
+                        "content": ""\\n          "",
                         "type": "TEXT",
                       },
                       {
@@ -802,7 +802,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                         "type": "ELEMENT",
                       },
                       {
-                        "content": ""\\r\\n        "",
+                        "content": ""\\n        "",
                         "type": "TEXT",
                       },
                     ],
@@ -811,7 +811,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                     "type": "ELEMENT",
                   },
                   {
-                    "content": ""\\r\\n        "",
+                    "content": ""\\n        "",
                     "type": "TEXT",
                   },
                   {
@@ -841,13 +841,13 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                     "type": "ELEMENT",
                   },
                   {
-                    "content": ""\\r\\n        "",
+                    "content": ""\\n        "",
                     "type": "TEXT",
                   },
                   {
                     "children": [
                       {
-                        "content": ""\\r\\n          "",
+                        "content": ""\\n          "",
                         "type": "TEXT",
                       },
                       {
@@ -862,7 +862,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                         "type": "ELEMENT",
                       },
                       {
-                        "content": ""\\r\\n          "",
+                        "content": ""\\n          "",
                         "type": "TEXT",
                       },
                       {
@@ -877,7 +877,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                         "type": "ELEMENT",
                       },
                       {
-                        "content": ""\\r\\n          "",
+                        "content": ""\\n          "",
                         "type": "TEXT",
                       },
                       {
@@ -892,7 +892,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                         "type": "ELEMENT",
                       },
                       {
-                        "content": ""\\r\\n        "",
+                        "content": ""\\n        "",
                         "type": "TEXT",
                       },
                     ],
@@ -901,13 +901,13 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                     "type": "ELEMENT",
                   },
                   {
-                    "content": ""\\r\\n        "",
+                    "content": ""\\n        "",
                     "type": "TEXT",
                   },
                   {
                     "children": [
                       {
-                        "content": ""\\r\\n          This is a paragraph before a "",
+                        "content": ""\\n          This is a paragraph before a "",
                         "type": "TEXT",
                       },
                       {
@@ -937,7 +937,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                         "type": "ELEMENT",
                       },
                       {
-                        "content": ""). Note that the spacing between a paragraph and a list before or after that is hard to tune in a user style sheet. You can't guess which paragraphs are logically related to a list, e.g. as a \\"list header\\".\\r\\n        "",
+                        "content": ""). Note that the spacing between a paragraph and a list before or after that is hard to tune in a user style sheet. You can't guess which paragraphs are logically related to a list, e.g. as a \\"list header\\".\\n        "",
                         "type": "TEXT",
                       },
                     ],
@@ -946,13 +946,13 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                     "type": "ELEMENT",
                   },
                   {
-                    "content": ""\\r\\n        "",
+                    "content": ""\\n        "",
                     "type": "TEXT",
                   },
                   {
                     "children": [
                       {
-                        "content": ""\\r\\n          "",
+                        "content": ""\\n          "",
                         "type": "TEXT",
                       },
                       {
@@ -967,7 +967,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                         "type": "ELEMENT",
                       },
                       {
-                        "content": ""\\r\\n          "",
+                        "content": ""\\n          "",
                         "type": "TEXT",
                       },
                       {
@@ -982,7 +982,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                         "type": "ELEMENT",
                       },
                       {
-                        "content": ""\\r\\n          "",
+                        "content": ""\\n          "",
                         "type": "TEXT",
                       },
                       {
@@ -997,7 +997,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                         "type": "ELEMENT",
                       },
                       {
-                        "content": ""\\r\\n          "",
+                        "content": ""\\n          "",
                         "type": "TEXT",
                       },
                       {
@@ -1012,7 +1012,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                         "type": "ELEMENT",
                       },
                       {
-                        "content": ""\\r\\n        "",
+                        "content": ""\\n        "",
                         "type": "TEXT",
                       },
                     ],
@@ -1021,13 +1021,13 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                     "type": "ELEMENT",
                   },
                   {
-                    "content": ""\\r\\n        "",
+                    "content": ""\\n        "",
                     "type": "TEXT",
                   },
                   {
                     "children": [
                       {
-                        "content": ""\\r\\n          This is a paragraph before a "",
+                        "content": ""\\n          This is a paragraph before a "",
                         "type": "TEXT",
                       },
                       {
@@ -1117,7 +1117,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                         "type": "ELEMENT",
                       },
                       {
-                        "content": "" which are suitable for real definition lists.\\r\\n        "",
+                        "content": "" which are suitable for real definition lists.\\n        "",
                         "type": "TEXT",
                       },
                     ],
@@ -1126,13 +1126,13 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                     "type": "ELEMENT",
                   },
                   {
-                    "content": ""\\r\\n        "",
+                    "content": ""\\n        "",
                     "type": "TEXT",
                   },
                   {
                     "children": [
                       {
-                        "content": ""\\r\\n          "",
+                        "content": ""\\n          "",
                         "type": "TEXT",
                       },
                       {
@@ -1147,7 +1147,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                         "type": "ELEMENT",
                       },
                       {
-                        "content": ""\\r\\n          "",
+                        "content": ""\\n          "",
                         "type": "TEXT",
                       },
                       {
@@ -1162,7 +1162,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                         "type": "ELEMENT",
                       },
                       {
-                        "content": ""\\r\\n          "",
+                        "content": ""\\n          "",
                         "type": "TEXT",
                       },
                       {
@@ -1177,7 +1177,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                         "type": "ELEMENT",
                       },
                       {
-                        "content": ""\\r\\n          "",
+                        "content": ""\\n          "",
                         "type": "TEXT",
                       },
                       {
@@ -1192,7 +1192,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                         "type": "ELEMENT",
                       },
                       {
-                        "content": ""\\r\\n          "",
+                        "content": ""\\n          "",
                         "type": "TEXT",
                       },
                       {
@@ -1207,7 +1207,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                         "type": "ELEMENT",
                       },
                       {
-                        "content": ""\\r\\n          "",
+                        "content": ""\\n          "",
                         "type": "TEXT",
                       },
                       {
@@ -1222,7 +1222,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                         "type": "ELEMENT",
                       },
                       {
-                        "content": ""\\r\\n          "",
+                        "content": ""\\n          "",
                         "type": "TEXT",
                       },
                       {
@@ -1237,7 +1237,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                         "type": "ELEMENT",
                       },
                       {
-                        "content": ""\\r\\n          "",
+                        "content": ""\\n          "",
                         "type": "TEXT",
                       },
                       {
@@ -1252,7 +1252,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                         "type": "ELEMENT",
                       },
                       {
-                        "content": ""\\r\\n        "",
+                        "content": ""\\n        "",
                         "type": "TEXT",
                       },
                     ],
@@ -1261,7 +1261,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                     "type": "ELEMENT",
                   },
                   {
-                    "content": ""\\r\\n      "",
+                    "content": ""\\n      "",
                     "type": "TEXT",
                   },
                 ],
@@ -1270,13 +1270,13 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                 "type": "ELEMENT",
               },
               {
-                "content": ""\\r\\n      "",
+                "content": ""\\n      "",
                 "type": "TEXT",
               },
               {
                 "children": [
                   {
-                    "content": ""\\r\\n        "",
+                    "content": ""\\n        "",
                     "type": "TEXT",
                   },
                   {
@@ -1291,13 +1291,13 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                     "type": "ELEMENT",
                   },
                   {
-                    "content": ""\\r\\n        "",
+                    "content": ""\\n        "",
                     "type": "TEXT",
                   },
                   {
                     "children": [
                       {
-                        "content": ""\\r\\n          "",
+                        "content": ""\\n          "",
                         "type": "TEXT",
                       },
                       {
@@ -1320,7 +1320,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                             "type": "ELEMENT",
                           },
                           {
-                            "content": "" (an abbreviation;\\r\\n            "",
+                            "content": "" (an abbreviation;\\n            "",
                             "type": "TEXT",
                           },
                           {
@@ -1344,7 +1344,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                         "type": "ELEMENT",
                       },
                       {
-                        "content": ""\\r\\n          "",
+                        "content": ""\\n          "",
                         "type": "TEXT",
                       },
                       {
@@ -1391,7 +1391,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                         "type": "ELEMENT",
                       },
                       {
-                        "content": ""\\r\\n          "",
+                        "content": ""\\n          "",
                         "type": "TEXT",
                       },
                       {
@@ -1436,7 +1436,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                         "type": "ELEMENT",
                       },
                       {
-                        "content": ""\\r\\n          "",
+                        "content": ""\\n          "",
                         "type": "TEXT",
                       },
                       {
@@ -1481,7 +1481,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                         "type": "ELEMENT",
                       },
                       {
-                        "content": ""\\r\\n          "",
+                        "content": ""\\n          "",
                         "type": "TEXT",
                       },
                       {
@@ -1526,7 +1526,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                         "type": "ELEMENT",
                       },
                       {
-                        "content": ""\\r\\n          "",
+                        "content": ""\\n          "",
                         "type": "TEXT",
                       },
                       {
@@ -1571,7 +1571,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                         "type": "ELEMENT",
                       },
                       {
-                        "content": ""\\r\\n          "",
+                        "content": ""\\n          "",
                         "type": "TEXT",
                       },
                       {
@@ -1616,7 +1616,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                         "type": "ELEMENT",
                       },
                       {
-                        "content": ""\\r\\n          "",
+                        "content": ""\\n          "",
                         "type": "TEXT",
                       },
                       {
@@ -1661,7 +1661,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                         "type": "ELEMENT",
                       },
                       {
-                        "content": ""\\r\\n          "",
+                        "content": ""\\n          "",
                         "type": "TEXT",
                       },
                       {
@@ -1708,7 +1708,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                         "type": "ELEMENT",
                       },
                       {
-                        "content": ""\\r\\n          "",
+                        "content": ""\\n          "",
                         "type": "TEXT",
                       },
                       {
@@ -1753,7 +1753,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                         "type": "ELEMENT",
                       },
                       {
-                        "content": ""\\r\\n          "",
+                        "content": ""\\n          "",
                         "type": "TEXT",
                       },
                       {
@@ -1798,7 +1798,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                         "type": "ELEMENT",
                       },
                       {
-                        "content": ""\\r\\n          "",
+                        "content": ""\\n          "",
                         "type": "TEXT",
                       },
                       {
@@ -1843,7 +1843,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                         "type": "ELEMENT",
                       },
                       {
-                        "content": ""\\r\\n          "",
+                        "content": ""\\n          "",
                         "type": "TEXT",
                       },
                       {
@@ -1884,7 +1884,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                         "type": "ELEMENT",
                       },
                       {
-                        "content": ""\\r\\n          "",
+                        "content": ""\\n          "",
                         "type": "TEXT",
                       },
                       {
@@ -1929,7 +1929,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                         "type": "ELEMENT",
                       },
                       {
-                        "content": ""\\r\\n          "",
+                        "content": ""\\n          "",
                         "type": "TEXT",
                       },
                       {
@@ -1974,7 +1974,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                         "type": "ELEMENT",
                       },
                       {
-                        "content": ""\\r\\n          "",
+                        "content": ""\\n          "",
                         "type": "TEXT",
                       },
                       {
@@ -2049,7 +2049,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                         "type": "ELEMENT",
                       },
                       {
-                        "content": ""\\r\\n          "",
+                        "content": ""\\n          "",
                         "type": "TEXT",
                       },
                       {
@@ -2094,7 +2094,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                         "type": "ELEMENT",
                       },
                       {
-                        "content": ""\\r\\n          "",
+                        "content": ""\\n          "",
                         "type": "TEXT",
                       },
                       {
@@ -2296,7 +2296,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                         "type": "ELEMENT",
                       },
                       {
-                        "content": ""\\r\\n          "",
+                        "content": ""\\n          "",
                         "type": "TEXT",
                       },
                       {
@@ -2341,7 +2341,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                         "type": "ELEMENT",
                       },
                       {
-                        "content": ""\\r\\n          "",
+                        "content": ""\\n          "",
                         "type": "TEXT",
                       },
                       {
@@ -2386,7 +2386,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                         "type": "ELEMENT",
                       },
                       {
-                        "content": ""\\r\\n          "",
+                        "content": ""\\n          "",
                         "type": "TEXT",
                       },
                       {
@@ -2461,7 +2461,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                         "type": "ELEMENT",
                       },
                       {
-                        "content": ""\\r\\n        "",
+                        "content": ""\\n        "",
                         "type": "TEXT",
                       },
                     ],
@@ -2470,13 +2470,13 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                     "type": "ELEMENT",
                   },
                   {
-                    "content": ""\\r\\n        "",
+                    "content": ""\\n        "",
                     "type": "TEXT",
                   },
                   {
                     "children": [
                       {
-                        "content": ""\\r\\n          Some of the elements tested above are typically displayed in a monospace font, often using the "",
+                        "content": ""\\n          Some of the elements tested above are typically displayed in a monospace font, often using the "",
                         "type": "TEXT",
                       },
                       {
@@ -2491,7 +2491,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                         "type": "ELEMENT",
                       },
                       {
-                        "content": "" presentation for all of them. This tests whether that is the case on your browser:\\r\\n        "",
+                        "content": "" presentation for all of them. This tests whether that is the case on your browser:\\n        "",
                         "type": "TEXT",
                       },
                     ],
@@ -2500,13 +2500,13 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                     "type": "ELEMENT",
                   },
                   {
-                    "content": ""\\r\\n        "",
+                    "content": ""\\n        "",
                     "type": "TEXT",
                   },
                   {
                     "children": [
                       {
-                        "content": ""\\r\\n          "",
+                        "content": ""\\n          "",
                         "type": "TEXT",
                       },
                       {
@@ -2532,7 +2532,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                         "type": "ELEMENT",
                       },
                       {
-                        "content": ""\\r\\n          "",
+                        "content": ""\\n          "",
                         "type": "TEXT",
                       },
                       {
@@ -2558,7 +2558,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                         "type": "ELEMENT",
                       },
                       {
-                        "content": ""\\r\\n          "",
+                        "content": ""\\n          "",
                         "type": "TEXT",
                       },
                       {
@@ -2584,7 +2584,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                         "type": "ELEMENT",
                       },
                       {
-                        "content": ""\\r\\n          "",
+                        "content": ""\\n          "",
                         "type": "TEXT",
                       },
                       {
@@ -2610,7 +2610,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                         "type": "ELEMENT",
                       },
                       {
-                        "content": ""\\r\\n        "",
+                        "content": ""\\n        "",
                         "type": "TEXT",
                       },
                     ],
@@ -2619,7 +2619,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                     "type": "ELEMENT",
                   },
                   {
-                    "content": ""\\r\\n        "",
+                    "content": ""\\n        "",
                     "type": "TEXT",
                   },
                   {
@@ -2634,13 +2634,13 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                     "type": "ELEMENT",
                   },
                   {
-                    "content": ""\\r\\n        "",
+                    "content": ""\\n        "",
                     "type": "TEXT",
                   },
                   {
                     "children": [
                       {
-                        "content": ""\\r\\n          "",
+                        "content": ""\\n          "",
                         "type": "TEXT",
                       },
                       {
@@ -2664,7 +2664,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                         "type": "ELEMENT",
                       },
                       {
-                        "content": ""\\r\\n          "",
+                        "content": ""\\n          "",
                         "type": "TEXT",
                       },
                       {
@@ -2690,7 +2690,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                         "type": "ELEMENT",
                       },
                       {
-                        "content": ""\\r\\n        "",
+                        "content": ""\\n        "",
                         "type": "TEXT",
                       },
                     ],
@@ -2699,13 +2699,13 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                     "type": "ELEMENT",
                   },
                   {
-                    "content": ""\\r\\n        "",
+                    "content": ""\\n        "",
                     "type": "TEXT",
                   },
                   {
                     "children": [
                       {
-                        "content": ""\\r\\n          This is a text paragraph that contains some inline links. Generally, inline links (as opposite to e.g. links lists) are problematic from the "",
+                        "content": ""\\n          This is a text paragraph that contains some inline links. Generally, inline links (as opposite to e.g. links lists) are problematic from the "",
                         "type": "TEXT",
                       },
                       {
@@ -2746,7 +2746,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                         "type": "ELEMENT",
                       },
                       {
-                        "content": "".\\r\\n        "",
+                        "content": "".\\n        "",
                         "type": "TEXT",
                       },
                     ],
@@ -2755,7 +2755,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                     "type": "ELEMENT",
                   },
                   {
-                    "content": ""\\r\\n      "",
+                    "content": ""\\n      "",
                     "type": "TEXT",
                   },
                 ],
@@ -2764,13 +2764,13 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                 "type": "ELEMENT",
               },
               {
-                "content": ""\\r\\n      "",
+                "content": ""\\n      "",
                 "type": "TEXT",
               },
               {
                 "children": [
                   {
-                    "content": ""\\r\\n        "",
+                    "content": ""\\n        "",
                     "type": "TEXT",
                   },
                   {
@@ -2785,19 +2785,19 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                     "type": "ELEMENT",
                   },
                   {
-                    "content": ""\\r\\n        "",
+                    "content": ""\\n        "",
                     "type": "TEXT",
                   },
                   {
                     "children": [
                       {
-                        "content": ""\\r\\n          "",
+                        "content": ""\\n          "",
                         "type": "TEXT",
                       },
                       {
                         "children": [
                           {
-                            "content": ""\\r\\n            "",
+                            "content": ""\\n            "",
                             "type": "TEXT",
                           },
                           {
@@ -2811,17 +2811,17 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                             "type": "ELEMENT",
                           },
                           {
-                            "content": ""\\r\\n            This is a form containing various fields (with some initial\\r\\n            values (defaults) set, so that you can see how input text looks\\r\\n            like without actually typing it):\\r\\n          "",
+                            "content": ""\\n            This is a form containing various fields (with some initial\\n            values (defaults) set, so that you can see how input text looks\\n            like without actually typing it):\\n          "",
                             "type": "TEXT",
                           },
                           {
-                            "content": ""\\r\\n          "",
+                            "content": ""\\n          "",
                             "type": "TEXT",
                           },
                           {
                             "children": [
                               {
-                                "content": ""\\r\\n            "",
+                                "content": ""\\n            "",
                                 "type": "TEXT",
                               },
                               {
@@ -2852,7 +2852,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                                     "type": "ELEMENT",
                                   },
                                   {
-                                    "content": ""\\r\\n            "",
+                                    "content": ""\\n            "",
                                     "type": "TEXT",
                                   },
                                   {
@@ -2884,7 +2884,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                                         "type": "ELEMENT",
                                       },
                                       {
-                                        "content": ""\\r\\n            "",
+                                        "content": ""\\n            "",
                                         "type": "TEXT",
                                       },
                                     ],
@@ -2898,7 +2898,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                                 "type": "ELEMENT",
                               },
                               {
-                                "content": ""\\r\\n            "",
+                                "content": ""\\n            "",
                                 "type": "TEXT",
                               },
                               {
@@ -2930,7 +2930,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                                     "type": "ELEMENT",
                                   },
                                   {
-                                    "content": ""\\r\\n            "",
+                                    "content": ""\\n            "",
                                     "type": "TEXT",
                                   },
                                   {
@@ -2961,7 +2961,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                                         "type": "ELEMENT",
                                       },
                                       {
-                                        "content": ""\\r\\n            "",
+                                        "content": ""\\n            "",
                                         "type": "TEXT",
                                       },
                                     ],
@@ -2975,7 +2975,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                                 "type": "ELEMENT",
                               },
                               {
-                                "content": ""\\r\\n            "",
+                                "content": ""\\n            "",
                                 "type": "TEXT",
                               },
                               {
@@ -3007,7 +3007,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                                     "type": "ELEMENT",
                                   },
                                   {
-                                    "content": ""\\r\\n            "",
+                                    "content": ""\\n            "",
                                     "type": "TEXT",
                                   },
                                   {
@@ -3022,7 +3022,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                                         "type": "ELEMENT",
                                       },
                                       {
-                                        "content": ""\\r\\n          "",
+                                        "content": ""\\n          "",
                                         "type": "TEXT",
                                       },
                                     ],
@@ -3041,7 +3041,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                             "type": "ELEMENT",
                           },
                           {
-                            "content": ""\\r\\n          "",
+                            "content": ""\\n          "",
                             "type": "TEXT",
                           },
                           {
@@ -3055,7 +3055,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                               {
                                 "children": [
                                   {
-                                    "content": ""Button:\\r\\n            "",
+                                    "content": ""Button:\\n            "",
                                     "type": "TEXT",
                                   },
                                   {
@@ -3108,7 +3108,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                         "type": "ELEMENT",
                       },
                       {
-                        "content": ""\\r\\n          "",
+                        "content": ""\\n          "",
                         "type": "TEXT",
                       },
                       {
@@ -3138,7 +3138,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                             "type": "ELEMENT",
                           },
                           {
-                            "content": ""\\r\\n          "",
+                            "content": ""\\n          "",
                             "type": "TEXT",
                           },
                           {
@@ -3168,7 +3168,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                                 "type": "ELEMENT",
                               },
                               {
-                                "content": ""\\r\\n          "",
+                                "content": ""\\n          "",
                                 "type": "TEXT",
                               },
                               {
@@ -3180,7 +3180,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                               {
                                 "children": [
                                   {
-                                    "content": ""\\r\\n            "",
+                                    "content": ""\\n            "",
                                     "type": "TEXT",
                                   },
                                   {
@@ -3203,7 +3203,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                                     "type": "ELEMENT",
                                   },
                                   {
-                                    "content": ""\\r\\n            "",
+                                    "content": ""\\n            "",
                                     "type": "TEXT",
                                   },
                                   {
@@ -3223,7 +3223,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                                     "type": "ELEMENT",
                                   },
                                   {
-                                    "content": ""\\r\\n          "",
+                                    "content": ""\\n          "",
                                     "type": "TEXT",
                                   },
                                 ],
@@ -3242,7 +3242,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                         "type": "ELEMENT",
                       },
                       {
-                        "content": ""\\r\\n          "",
+                        "content": ""\\n          "",
                         "type": "TEXT",
                       },
                       {
@@ -3287,13 +3287,13 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                         "type": "ELEMENT",
                       },
                       {
-                        "content": ""\\r\\n          "",
+                        "content": ""\\n          "",
                         "type": "TEXT",
                       },
                       {
                         "children": [
                           {
-                            "content": ""\\r\\n            "",
+                            "content": ""\\n            "",
                             "type": "TEXT",
                           },
                           {
@@ -3308,7 +3308,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                             "type": "ELEMENT",
                           },
                           {
-                            "content": ""\\r\\n            "",
+                            "content": ""\\n            "",
                             "type": "TEXT",
                           },
                           {
@@ -3338,7 +3338,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                                 "type": "ELEMENT",
                               },
                               {
-                                "content": ""\\r\\n            "",
+                                "content": ""\\n            "",
                                 "type": "TEXT",
                               },
                               {
@@ -3369,7 +3369,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                                     "type": "ELEMENT",
                                   },
                                   {
-                                    "content": ""\\r\\n          "",
+                                    "content": ""\\n          "",
                                     "type": "TEXT",
                                   },
                                 ],
@@ -3388,13 +3388,13 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                         "type": "ELEMENT",
                       },
                       {
-                        "content": ""\\r\\n          "",
+                        "content": ""\\n          "",
                         "type": "TEXT",
                       },
                       {
                         "children": [
                           {
-                            "content": ""\\r\\n            "",
+                            "content": ""\\n            "",
                             "type": "TEXT",
                           },
                           {
@@ -3409,7 +3409,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                             "type": "ELEMENT",
                           },
                           {
-                            "content": ""\\r\\n            "",
+                            "content": ""\\n            "",
                             "type": "TEXT",
                           },
                           {
@@ -3438,7 +3438,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                                 "type": "ELEMENT",
                               },
                               {
-                                "content": ""\\r\\n            "",
+                                "content": ""\\n            "",
                                 "type": "TEXT",
                               },
                               {
@@ -3468,7 +3468,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                                     "type": "ELEMENT",
                                   },
                                   {
-                                    "content": ""\\r\\n          "",
+                                    "content": ""\\n          "",
                                     "type": "TEXT",
                                   },
                                 ],
@@ -3487,13 +3487,13 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                         "type": "ELEMENT",
                       },
                       {
-                        "content": ""\\r\\n          "",
+                        "content": ""\\n          "",
                         "type": "TEXT",
                       },
                       {
                         "children": [
                           {
-                            "content": ""\\r\\n            "",
+                            "content": ""\\n            "",
                             "type": "TEXT",
                           },
                           {
@@ -3529,13 +3529,13 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                                 "type": "ELEMENT",
                               },
                               {
-                                "content": "" (dropdown box):\\r\\n              "",
+                                "content": "" (dropdown box):\\n              "",
                                 "type": "TEXT",
                               },
                               {
                                 "children": [
                                   {
-                                    "content": ""\\r\\n                "",
+                                    "content": ""\\n                "",
                                     "type": "TEXT",
                                   },
                                   {
@@ -3550,7 +3550,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                                     "type": "ELEMENT",
                                   },
                                   {
-                                    "content": ""\\r\\n                "",
+                                    "content": ""\\n                "",
                                     "type": "TEXT",
                                   },
                                   {
@@ -3567,7 +3567,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                                     "type": "ELEMENT",
                                   },
                                   {
-                                    "content": ""\\r\\n                "",
+                                    "content": ""\\n                "",
                                     "type": "TEXT",
                                   },
                                   {
@@ -3582,7 +3582,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                                     "type": "ELEMENT",
                                   },
                                   {
-                                    "content": ""\\r\\n              "",
+                                    "content": ""\\n              "",
                                     "type": "TEXT",
                                   },
                                 ],
@@ -3595,7 +3595,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                                 "type": "ELEMENT",
                               },
                               {
-                                "content": ""\\r\\n            "",
+                                "content": ""\\n            "",
                                 "type": "TEXT",
                               },
                             ],
@@ -3606,7 +3606,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                             "type": "ELEMENT",
                           },
                           {
-                            "content": ""\\r\\n          "",
+                            "content": ""\\n          "",
                             "type": "TEXT",
                           },
                         ],
@@ -3615,13 +3615,13 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                         "type": "ELEMENT",
                       },
                       {
-                        "content": ""\\r\\n          "",
+                        "content": ""\\n          "",
                         "type": "TEXT",
                       },
                       {
                         "children": [
                           {
-                            "content": ""\\r\\n            "",
+                            "content": ""\\n            "",
                             "type": "TEXT",
                           },
                           {
@@ -3674,13 +3674,13 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                             "type": "ELEMENT",
                           },
                           {
-                            "content": ""\\r\\n            "",
+                            "content": ""\\n            "",
                             "type": "TEXT",
                           },
                           {
                             "children": [
                               {
-                                "content": ""\\r\\n              "",
+                                "content": ""\\n              "",
                                 "type": "TEXT",
                               },
                               {
@@ -3695,7 +3695,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                                 "type": "ELEMENT",
                               },
                               {
-                                "content": ""\\r\\n              "",
+                                "content": ""\\n              "",
                                 "type": "TEXT",
                               },
                               {
@@ -3712,7 +3712,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                                 "type": "ELEMENT",
                               },
                               {
-                                "content": ""\\r\\n              "",
+                                "content": ""\\n              "",
                                 "type": "TEXT",
                               },
                               {
@@ -3727,7 +3727,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                                 "type": "ELEMENT",
                               },
                               {
-                                "content": ""\\r\\n            "",
+                                "content": ""\\n            "",
                                 "type": "TEXT",
                               },
                             ],
@@ -3740,7 +3740,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                             "type": "ELEMENT",
                           },
                           {
-                            "content": ""\\r\\n          "",
+                            "content": ""\\n          "",
                             "type": "TEXT",
                           },
                         ],
@@ -3749,19 +3749,19 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                         "type": "ELEMENT",
                       },
                       {
-                        "content": ""\\r\\n          "",
+                        "content": ""\\n          "",
                         "type": "TEXT",
                       },
                       {
                         "children": [
                           {
-                            "content": ""\\r\\n            "",
+                            "content": ""\\n            "",
                             "type": "TEXT",
                           },
                           {
                             "children": [
                               {
-                                "content": ""Submit button:\\r\\n            "",
+                                "content": ""Submit button:\\n            "",
                                 "type": "TEXT",
                               },
                               {
@@ -3776,7 +3776,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                                 "type": "ELEMENT",
                               },
                               {
-                                "content": ""\\r\\n          "",
+                                "content": ""\\n          "",
                                 "type": "TEXT",
                               },
                             ],
@@ -3787,7 +3787,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                             "type": "ELEMENT",
                           },
                           {
-                            "content": ""\\r\\n        "",
+                            "content": ""\\n        "",
                             "type": "TEXT",
                           },
                         ],
@@ -3803,7 +3803,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                     "type": "ELEMENT",
                   },
                   {
-                    "content": ""\\r\\n      "",
+                    "content": ""\\n      "",
                     "type": "TEXT",
                   },
                 ],
@@ -3812,13 +3812,13 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                 "type": "ELEMENT",
               },
               {
-                "content": ""\\r\\n      "",
+                "content": ""\\n      "",
                 "type": "TEXT",
               },
               {
                 "children": [
                   {
-                    "content": ""\\r\\n        "",
+                    "content": ""\\n        "",
                     "type": "TEXT",
                   },
                   {
@@ -3833,13 +3833,13 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                     "type": "ELEMENT",
                   },
                   {
-                    "content": ""\\r\\n        "",
+                    "content": ""\\n        "",
                     "type": "TEXT",
                   },
                   {
                     "children": [
                       {
-                        "content": ""\\r\\n          The following table has a caption. The first row is in a thead, the second row is the tfoot, and the rest is in a tbody. The first column contain table header cells ("",
+                        "content": ""\\n          The following table has a caption. The first row is in a thead, the second row is the tfoot, and the rest is in a tbody. The first column contain table header cells ("",
                         "type": "TEXT",
                       },
                       {
@@ -3869,7 +3869,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                         "type": "ELEMENT",
                       },
                       {
-                        "content": "" elements):\\r\\n        "",
+                        "content": "" elements):\\n        "",
                         "type": "TEXT",
                       },
                     ],
@@ -3878,13 +3878,13 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                     "type": "ELEMENT",
                   },
                   {
-                    "content": ""\\r\\n        "",
+                    "content": ""\\n        "",
                     "type": "TEXT",
                   },
                   {
                     "children": [
                       {
-                        "content": ""\\r\\n          "",
+                        "content": ""\\n          "",
                         "type": "TEXT",
                       },
                       {
@@ -3899,7 +3899,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                         "type": "ELEMENT",
                       },
                       {
-                        "content": ""\\r\\n          "",
+                        "content": ""\\n          "",
                         "type": "TEXT",
                       },
                       {
@@ -3964,7 +3964,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                         "type": "ELEMENT",
                       },
                       {
-                        "content": ""\\r\\n          "",
+                        "content": ""\\n          "",
                         "type": "TEXT",
                       },
                       {
@@ -4029,13 +4029,13 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                         "type": "ELEMENT",
                       },
                       {
-                        "content": ""\\r\\n          "",
+                        "content": ""\\n          "",
                         "type": "TEXT",
                       },
                       {
                         "children": [
                           {
-                            "content": ""\\r\\n            "",
+                            "content": ""\\n            "",
                             "type": "TEXT",
                           },
                           {
@@ -4085,7 +4085,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                             "type": "ELEMENT",
                           },
                           {
-                            "content": ""\\r\\n            "",
+                            "content": ""\\n            "",
                             "type": "TEXT",
                           },
                           {
@@ -4135,7 +4135,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                             "type": "ELEMENT",
                           },
                           {
-                            "content": ""\\r\\n            "",
+                            "content": ""\\n            "",
                             "type": "TEXT",
                           },
                           {
@@ -4185,7 +4185,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                             "type": "ELEMENT",
                           },
                           {
-                            "content": ""\\r\\n            "",
+                            "content": ""\\n            "",
                             "type": "TEXT",
                           },
                           {
@@ -4235,7 +4235,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                             "type": "ELEMENT",
                           },
                           {
-                            "content": ""\\r\\n            "",
+                            "content": ""\\n            "",
                             "type": "TEXT",
                           },
                           {
@@ -4285,7 +4285,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                             "type": "ELEMENT",
                           },
                           {
-                            "content": ""\\r\\n          "",
+                            "content": ""\\n          "",
                             "type": "TEXT",
                           },
                         ],
@@ -4294,7 +4294,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                         "type": "ELEMENT",
                       },
                       {
-                        "content": ""\\r\\n        "",
+                        "content": ""\\n        "",
                         "type": "TEXT",
                       },
                     ],
@@ -4305,7 +4305,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                     "type": "ELEMENT",
                   },
                   {
-                    "content": ""\\r\\n      "",
+                    "content": ""\\n      "",
                     "type": "TEXT",
                   },
                 ],
@@ -4314,13 +4314,13 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                 "type": "ELEMENT",
               },
               {
-                "content": ""\\r\\n      "",
+                "content": ""\\n      "",
                 "type": "TEXT",
               },
               {
                 "children": [
                   {
-                    "content": ""\\r\\n        "",
+                    "content": ""\\n        "",
                     "type": "TEXT",
                   },
                   {
@@ -4335,7 +4335,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                     "type": "ELEMENT",
                   },
                   {
-                    "content": ""\\r\\n        "",
+                    "content": ""\\n        "",
                     "type": "TEXT",
                   },
                   {
@@ -4350,13 +4350,13 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                     "type": "ELEMENT",
                   },
                   {
-                    "content": ""\\r\\n        "",
+                    "content": ""\\n        "",
                     "type": "TEXT",
                   },
                   {
                     "children": [
                       {
-                        "content": ""\\r\\n          "",
+                        "content": ""\\n          "",
                         "type": "TEXT",
                       },
                       {
@@ -4371,7 +4371,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                         "type": "ELEMENT",
                       },
                       {
-                        "content": ""\\r\\n          "",
+                        "content": ""\\n          "",
                         "type": "TEXT",
                       },
                       {
@@ -4412,7 +4412,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                         "type": "ELEMENT",
                       },
                       {
-                        "content": ""\\r\\n        "",
+                        "content": ""\\n        "",
                         "type": "TEXT",
                       },
                     ],
@@ -4421,7 +4421,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                     "type": "ELEMENT",
                   },
                   {
-                    "content": ""\\r\\n        "",
+                    "content": ""\\n        "",
                     "type": "TEXT",
                   },
                   {
@@ -4436,13 +4436,13 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                     "type": "ELEMENT",
                   },
                   {
-                    "content": ""\\r\\n        "",
+                    "content": ""\\n        "",
                     "type": "TEXT",
                   },
                   {
                     "children": [
                       {
-                        "content": ""\\r\\n          "",
+                        "content": ""\\n          "",
                         "type": "TEXT",
                       },
                       {
@@ -4455,7 +4455,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                         "type": "ELEMENT",
                       },
                       {
-                        "content": ""\\r\\n          "",
+                        "content": ""\\n          "",
                         "type": "TEXT",
                       },
                       {
@@ -4470,7 +4470,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                         "type": "ELEMENT",
                       },
                       {
-                        "content": ""\\r\\n        "",
+                        "content": ""\\n        "",
                         "type": "TEXT",
                       },
                     ],
@@ -4479,7 +4479,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                     "type": "ELEMENT",
                   },
                   {
-                    "content": ""\\r\\n        "",
+                    "content": ""\\n        "",
                     "type": "TEXT",
                   },
                   {
@@ -4494,7 +4494,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                     "type": "ELEMENT",
                   },
                   {
-                    "content": ""\\r\\n        "",
+                    "content": ""\\n        "",
                     "type": "TEXT",
                   },
                   {
@@ -4520,7 +4520,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                     "type": "ELEMENT",
                   },
                   {
-                    "content": ""\\r\\n        "",
+                    "content": ""\\n        "",
                     "type": "TEXT",
                   },
                   {
@@ -4535,13 +4535,13 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                     "type": "ELEMENT",
                   },
                   {
-                    "content": ""\\r\\n        "",
+                    "content": ""\\n        "",
                     "type": "TEXT",
                   },
                   {
                     "children": [
                       {
-                        "content": ""\\r\\n          "",
+                        "content": ""\\n          "",
                         "type": "TEXT",
                       },
                       {
@@ -4563,7 +4563,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                         "type": "ELEMENT",
                       },
                       {
-                        "content": ""\\r\\n          "",
+                        "content": ""\\n          "",
                         "type": "TEXT",
                       },
                       {
@@ -4591,7 +4591,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                         "type": "ELEMENT",
                       },
                       {
-                        "content": ""\\r\\n          "",
+                        "content": ""\\n          "",
                         "type": "TEXT",
                       },
                       {
@@ -4619,7 +4619,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                         "type": "ELEMENT",
                       },
                       {
-                        "content": ""\\r\\n          "",
+                        "content": ""\\n          "",
                         "type": "TEXT",
                       },
                       {
@@ -4648,7 +4648,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                         "type": "ELEMENT",
                       },
                       {
-                        "content": ""\\r\\n        "",
+                        "content": ""\\n        "",
                         "type": "TEXT",
                       },
                     ],
@@ -4657,7 +4657,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                     "type": "ELEMENT",
                   },
                   {
-                    "content": ""\\r\\n        "",
+                    "content": ""\\n        "",
                     "type": "TEXT",
                   },
                   {
@@ -4672,13 +4672,13 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                     "type": "ELEMENT",
                   },
                   {
-                    "content": ""\\r\\n        "",
+                    "content": ""\\n        "",
                     "type": "TEXT",
                   },
                   {
                     "children": [
                       {
-                        "content": ""\\r\\n          "",
+                        "content": ""\\n          "",
                         "type": "TEXT",
                       },
                       {
@@ -4700,7 +4700,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                         "type": "ELEMENT",
                       },
                       {
-                        "content": ""\\r\\n          "",
+                        "content": ""\\n          "",
                         "type": "TEXT",
                       },
                       {
@@ -4726,7 +4726,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                         "type": "ELEMENT",
                       },
                       {
-                        "content": ""\\r\\n          "",
+                        "content": ""\\n          "",
                         "type": "TEXT",
                       },
                       {
@@ -4751,7 +4751,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                         "type": "ELEMENT",
                       },
                       {
-                        "content": ""\\r\\n        "",
+                        "content": ""\\n        "",
                         "type": "TEXT",
                       },
                     ],
@@ -4760,7 +4760,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                     "type": "ELEMENT",
                   },
                   {
-                    "content": ""\\r\\n      "",
+                    "content": ""\\n      "",
                     "type": "TEXT",
                   },
                 ],
@@ -4769,13 +4769,13 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                 "type": "ELEMENT",
               },
               {
-                "content": ""\\r\\n      "",
+                "content": ""\\n      "",
                 "type": "TEXT",
               },
               {
                 "children": [
                   {
-                    "content": ""\\r\\n        "",
+                    "content": ""\\n        "",
                     "type": "TEXT",
                   },
                   {
@@ -4790,7 +4790,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                     "type": "ELEMENT",
                   },
                   {
-                    "content": ""\\r\\n        "",
+                    "content": ""\\n        "",
                     "type": "TEXT",
                   },
                   {
@@ -4805,13 +4805,13 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                     "type": "ELEMENT",
                   },
                   {
-                    "content": ""\\r\\n        "",
+                    "content": ""\\n        "",
                     "type": "TEXT",
                   },
                   {
                     "children": [
                       {
-                        "content": ""\\r\\n          The following table has some sample characters with annotations. If the browser&#8217;s default font does not contain all of them, they may get displayed using backup fonts.  This may cause stylistic differences, but it should not prevent the characters from being displayed at all.\\r\\n        "",
+                        "content": ""\\n          The following table has some sample characters with annotations. If the browser&#8217;s default font does not contain all of them, they may get displayed using backup fonts.  This may cause stylistic differences, but it should not prevent the characters from being displayed at all.\\n        "",
                         "type": "TEXT",
                       },
                     ],
@@ -4820,25 +4820,25 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                     "type": "ELEMENT",
                   },
                   {
-                    "content": ""\\r\\n        "",
+                    "content": ""\\n        "",
                     "type": "TEXT",
                   },
                   {
                     "children": [
                       {
-                        "content": ""\\r\\n          "",
+                        "content": ""\\n          "",
                         "type": "TEXT",
                       },
                       {
                         "children": [
                           {
-                            "content": ""\\r\\n            "",
+                            "content": ""\\n            "",
                             "type": "TEXT",
                           },
                           {
                             "children": [
                               {
-                                "content": ""\\r\\n              "",
+                                "content": ""\\n              "",
                                 "type": "TEXT",
                               },
                               {
@@ -4853,7 +4853,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                                 "type": "ELEMENT",
                               },
                               {
-                                "content": ""\\r\\n              "",
+                                "content": ""\\n              "",
                                 "type": "TEXT",
                               },
                               {
@@ -4868,7 +4868,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                                 "type": "ELEMENT",
                               },
                               {
-                                "content": ""\\r\\n              "",
+                                "content": ""\\n              "",
                                 "type": "TEXT",
                               },
                               {
@@ -4883,7 +4883,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                                 "type": "ELEMENT",
                               },
                               {
-                                "content": ""\\r\\n            "",
+                                "content": ""\\n            "",
                                 "type": "TEXT",
                               },
                             ],
@@ -4892,7 +4892,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                             "type": "ELEMENT",
                           },
                           {
-                            "content": ""\\r\\n          "",
+                            "content": ""\\n          "",
                             "type": "TEXT",
                           },
                         ],
@@ -4901,13 +4901,13 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                         "type": "ELEMENT",
                       },
                       {
-                        "content": ""\\r\\n          "",
+                        "content": ""\\n          "",
                         "type": "TEXT",
                       },
                       {
                         "children": [
                           {
-                            "content": ""\\r\\n            "",
+                            "content": ""\\n            "",
                             "type": "TEXT",
                           },
                           {
@@ -4951,7 +4951,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                             "type": "ELEMENT",
                           },
                           {
-                            "content": ""\\r\\n            "",
+                            "content": ""\\n            "",
                             "type": "TEXT",
                           },
                           {
@@ -4999,7 +4999,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                             "type": "ELEMENT",
                           },
                           {
-                            "content": ""\\r\\n            "",
+                            "content": ""\\n            "",
                             "type": "TEXT",
                           },
                           {
@@ -5047,7 +5047,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                             "type": "ELEMENT",
                           },
                           {
-                            "content": ""\\r\\n            "",
+                            "content": ""\\n            "",
                             "type": "TEXT",
                           },
                           {
@@ -5095,7 +5095,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                             "type": "ELEMENT",
                           },
                           {
-                            "content": ""\\r\\n            "",
+                            "content": ""\\n            "",
                             "type": "TEXT",
                           },
                           {
@@ -5143,7 +5143,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                             "type": "ELEMENT",
                           },
                           {
-                            "content": ""\\r\\n            "",
+                            "content": ""\\n            "",
                             "type": "TEXT",
                           },
                           {
@@ -5191,7 +5191,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                             "type": "ELEMENT",
                           },
                           {
-                            "content": ""\\r\\n          "",
+                            "content": ""\\n          "",
                             "type": "TEXT",
                           },
                         ],
@@ -5200,7 +5200,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                         "type": "ELEMENT",
                       },
                       {
-                        "content": ""\\r\\n        "",
+                        "content": ""\\n        "",
                         "type": "TEXT",
                       },
                     ],
@@ -5209,7 +5209,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                     "type": "ELEMENT",
                   },
                   {
-                    "content": ""\\r\\n      "",
+                    "content": ""\\n      "",
                     "type": "TEXT",
                   },
                 ],
@@ -5218,7 +5218,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                 "type": "ELEMENT",
               },
               {
-                "content": ""\\r\\n    "",
+                "content": ""\\n    "",
                 "type": "TEXT",
               },
             ],
@@ -5227,13 +5227,13 @@ exports[`Integration test > should correctly parse input html file 1`] = `
             "type": "ELEMENT",
           },
           {
-            "content": ""\\r\\n    "",
+            "content": ""\\n    "",
             "type": "TEXT",
           },
           {
             "children": [
               {
-                "content": ""\\r\\n      "",
+                "content": ""\\n      "",
                 "type": "TEXT",
               },
               {
@@ -5245,7 +5245,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                 "type": "ELEMENT",
               },
               {
-                "content": ""\\r\\n      "",
+                "content": ""\\n      "",
                 "type": "TEXT",
               },
               {
@@ -5305,7 +5305,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                 "type": "ELEMENT",
               },
               {
-                "content": ""\\r\\n      "",
+                "content": ""\\n      "",
                 "type": "TEXT",
               },
               {
@@ -5335,7 +5335,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
                 "type": "ELEMENT",
               },
               {
-                "content": ""\\r\\n    "",
+                "content": ""\\n    "",
                 "type": "TEXT",
               },
             ],
@@ -5344,7 +5344,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
             "type": "ELEMENT",
           },
           {
-            "content": ""\\r\\n  "",
+            "content": ""\\n  "",
             "type": "TEXT",
           },
         ],
@@ -5353,7 +5353,7 @@ exports[`Integration test > should correctly parse input html file 1`] = `
         "type": "ELEMENT",
       },
       {
-        "content": ""\\r\\n"",
+        "content": ""\\n"",
         "type": "TEXT",
       },
     ],

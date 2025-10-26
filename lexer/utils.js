@@ -123,7 +123,7 @@ function getAttr(inputString, startIdx, endIdx) {
 function createTextNode(text) {
   return {
     type: TEXT_NODE,
-    content: JSON.stringify(text),
+    content: JSON.stringify(text).replace(/\\r\\n/g, "\\n"),
   };
 }
 
