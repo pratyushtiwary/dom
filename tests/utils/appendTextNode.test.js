@@ -7,18 +7,15 @@ describe("appendTextNode", () => {
   it.each([
     {
       input: "",
-      output: undefined,
     },
     {
       input: "Test",
-      output: createTextNode("Test"),
     },
     {
       input: " Test",
-      output: createTextNode(" Test"),
     },
-  ])("should correctly append text node", ({ input, output }) => {
+  ])("should correctly append text node", ({ input }) => {
     appendTextNode(nodes, input);
-    expect(nodes.at(-1)).toStrictEqual(output);
+    expect(nodes.at(-1)).toMatchSnapshot();
   });
 });

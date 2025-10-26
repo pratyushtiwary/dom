@@ -1,0 +1,15 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`createTextNode > should correctly create new text node 1`] = `
+{
+  "content": ""This is a test input"",
+  "type": "TEXT",
+}
+`;
+
+exports[`createTextNode > should correctly create new text node 2`] = `
+{
+  "content": "["This is a test input"]",
+  "type": "TEXT",
+}
+`;

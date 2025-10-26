@@ -1,0 +1,393 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`advance lexer tests > should correctly parse basic html strings: 'dangling <' 1`] = `
+[
+  {
+    "children": [
+      {
+        "content": ""Text < "",
+        "type": "TEXT",
+      },
+      {
+        "children": [
+          {
+            "content": ""bold"",
+            "type": "TEXT",
+          },
+        ],
+        "data": {},
+        "tag": "b",
+        "type": "ELEMENT",
+      },
+    ],
+    "data": {},
+    "tag": "p",
+    "type": "ELEMENT",
+  },
+]
+`;
+
+exports[`advance lexer tests > should correctly parse basic html strings: 'highly nested html file' 1`] = `
+[
+  {
+    "children": [
+      {
+        "content": ""\\n"",
+        "type": "TEXT",
+      },
+      {
+        "children": [
+          {
+            "content": ""\\n\\t"",
+            "type": "TEXT",
+          },
+          {
+            "children": [],
+            "data": {
+              "charset": "UTF-8",
+            },
+            "tag": "meta",
+            "type": "ELEMENT",
+          },
+          {
+            "content": ""\\n\\t"",
+            "type": "TEXT",
+          },
+          {
+            "children": [],
+            "data": {
+              "content": "width=device-width, initial-scale=1.0",
+              "name": "viewport",
+            },
+            "tag": "meta",
+            "type": "ELEMENT",
+          },
+          {
+            "content": ""\\n\\t"",
+            "type": "TEXT",
+          },
+          {
+            "children": [
+              {
+                "content": ""Test highly nested"",
+                "type": "TEXT",
+              },
+            ],
+            "data": {},
+            "tag": "title",
+            "type": "ELEMENT",
+          },
+          {
+            "content": ""\\n"",
+            "type": "TEXT",
+          },
+        ],
+        "data": {},
+        "tag": "head",
+        "type": "ELEMENT",
+      },
+      {
+        "content": ""\\n"",
+        "type": "TEXT",
+      },
+      {
+        "children": [
+          {
+            "content": ""\\n\\t"",
+            "type": "TEXT",
+          },
+          {
+            "children": [
+              {
+                "content": ""Hello world "",
+                "type": "TEXT",
+              },
+              {
+                "children": [
+                  {
+                    "content": ""I'm a "",
+                    "type": "TEXT",
+                  },
+                  {
+                    "children": [
+                      {
+                        "content": ""p "",
+                        "type": "TEXT",
+                      },
+                      {
+                        "children": [
+                          {
+                            "children": [
+                              {
+                                "content": ""tag"",
+                                "type": "TEXT",
+                              },
+                            ],
+                            "data": {},
+                            "tag": "xyz",
+                            "type": "ELEMENT",
+                          },
+                        ],
+                        "data": {},
+                        "tag": "i",
+                        "type": "ELEMENT",
+                      },
+                    ],
+                    "data": {},
+                    "tag": "b",
+                    "type": "ELEMENT",
+                  },
+                ],
+                "data": {},
+                "tag": "p",
+                "type": "ELEMENT",
+              },
+            ],
+            "data": {},
+            "tag": "h1",
+            "type": "ELEMENT",
+          },
+          {
+            "content": ""\\n"",
+            "type": "TEXT",
+          },
+        ],
+        "data": {},
+        "tag": "body",
+        "type": "ELEMENT",
+      },
+      {
+        "content": ""\\n"",
+        "type": "TEXT",
+      },
+    ],
+    "data": {
+      "lang": "en",
+    },
+    "tag": "html",
+    "type": "ELEMENT",
+  },
+]
+`;
+
+exports[`advance lexer tests > should correctly parse basic html strings: 'simple html file' 1`] = `
+[
+  {
+    "children": [
+      {
+        "content": ""\\n"",
+        "type": "TEXT",
+      },
+      {
+        "children": [
+          {
+            "content": ""\\n\\t"",
+            "type": "TEXT",
+          },
+          {
+            "children": [],
+            "data": {
+              "charset": "UTF-8",
+            },
+            "tag": "meta",
+            "type": "ELEMENT",
+          },
+          {
+            "content": ""\\n\\t"",
+            "type": "TEXT",
+          },
+          {
+            "children": [],
+            "data": {
+              "content": "width=device-width, initial-scale=1.0",
+              "name": "viewport",
+            },
+            "tag": "meta",
+            "type": "ELEMENT",
+          },
+          {
+            "content": ""\\n\\t"",
+            "type": "TEXT",
+          },
+          {
+            "children": [
+              {
+                "content": ""Test Simple"",
+                "type": "TEXT",
+              },
+            ],
+            "data": {},
+            "tag": "title",
+            "type": "ELEMENT",
+          },
+          {
+            "content": ""\\n"",
+            "type": "TEXT",
+          },
+        ],
+        "data": {},
+        "tag": "head",
+        "type": "ELEMENT",
+      },
+      {
+        "content": ""\\n"",
+        "type": "TEXT",
+      },
+      {
+        "children": [
+          {
+            "content": ""\\n\\t"",
+            "type": "TEXT",
+          },
+          {
+            "children": [
+              {
+                "content": ""Hello world"",
+                "type": "TEXT",
+              },
+            ],
+            "data": {},
+            "tag": "h1",
+            "type": "ELEMENT",
+          },
+          {
+            "content": ""\\n"",
+            "type": "TEXT",
+          },
+        ],
+        "data": {},
+        "tag": "body",
+        "type": "ELEMENT",
+      },
+      {
+        "content": ""\\n"",
+        "type": "TEXT",
+      },
+    ],
+    "data": {
+      "lang": "en",
+    },
+    "tag": "html",
+    "type": "ELEMENT",
+  },
+]
+`;
+
+exports[`advance lexer tests > should correctly parse basic html strings: 'user-defined void tag, nested' 1`] = `
+[
+  {
+    "children": [
+      {
+        "children": [
+          {
+            "content": "" "",
+            "type": "TEXT",
+          },
+          {
+            "children": [
+              {
+                "content": ""test"",
+                "type": "TEXT",
+              },
+            ],
+            "data": {},
+            "tag": "abc",
+            "type": "ELEMENT",
+          },
+        ],
+        "data": {
+          "abc": "1",
+          "pqr": "hello world",
+          "test": true,
+        },
+        "tag": "xyz",
+        "type": "ELEMENT",
+      },
+    ],
+    "data": {},
+    "tag": "p",
+    "type": "ELEMENT",
+  },
+]
+`;
+
+exports[`advance lexer tests > should correctly parse basic html strings: 'user-defined void tag, not nested' 1`] = `
+[
+  {
+    "children": [
+      {
+        "content": "" test"",
+        "type": "TEXT",
+      },
+    ],
+    "data": {
+      "abc": "1",
+      "pqr": "hello world",
+      "test": true,
+    },
+    "tag": "xyz",
+    "type": "ELEMENT",
+  },
+]
+`;
+
+exports[`advance lexer tests > should correctly parse basic html strings: 'void tag, nested' 1`] = `
+[
+  {
+    "children": [
+      {
+        "children": [],
+        "data": {
+          "disabled": true,
+          "src": "https://example.com",
+          "width": "200",
+        },
+        "tag": "img",
+        "type": "ELEMENT",
+      },
+      {
+        "content": "" test"",
+        "type": "TEXT",
+      },
+    ],
+    "data": {},
+    "tag": "p",
+    "type": "ELEMENT",
+  },
+]
+`;
+
+exports[`advance lexer tests > should correctly parse basic html strings: 'void tag, not nested' 1`] = `
+[
+  {
+    "children": [],
+    "data": {
+      "disabled": true,
+      "src": "https://example.com",
+      "width": "200",
+    },
+    "tag": "img",
+    "type": "ELEMENT",
+  },
+]
+`;
+
+exports[`advance lexer tests > should correctly parse basic html strings: 'without root' 1`] = `
+[
+  {
+    "content": ""test "",
+    "type": "TEXT",
+  },
+  {
+    "children": [
+      {
+        "content": ""Hello world"",
+        "type": "TEXT",
+      },
+    ],
+    "data": {},
+    "tag": "p",
+    "type": "ELEMENT",
+  },
+]
+`;

@@ -1,0 +1,9 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`appendElementNode > should correctly append ellement node 1`] = `undefined`;
+
+exports[`appendElementNode > should correctly append ellement node 2`] = `
+{
+  "content": "Test",
+}
+`;

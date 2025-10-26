@@ -15,23 +15,21 @@ describe("appendElementNode", () => {
   it.each([
     {
       input: "",
-      output: undefined,
       verifyCall: false,
     },
     {
       input: "Test",
-      output: { content: "Test" },
       verifyCall: true,
     },
   ])(
     "should correctly append ellement node",
-    ({ input, output, verifyCall }) => {
+    ({ input, verifyCall }) => {
       appendElementNode(nodes, input, parseMethod);
 
       if (verifyCall) {
         expect(parseMethod).toHaveBeenCalledWith(input);
       }
-      expect(nodes.at(-1)).toStrictEqual(output);
+      expect(nodes.at(-1)).toMatchSnapshot();
     }
   );
 });

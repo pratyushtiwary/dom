@@ -1,0 +1,106 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`basic lexer tests > should correctly parse basic html strings: 'Empty string' 1`] = `
+[
+  {
+    "content": """",
+    "type": "TEXT",
+  },
+]
+`;
+
+exports[`basic lexer tests > should correctly parse basic html strings: 'Nested tags, with attrs' 1`] = `
+[
+  {
+    "children": [
+      {
+        "content": ""Test "",
+        "type": "TEXT",
+      },
+      {
+        "children": [
+          {
+            "content": ""Hello World"",
+            "type": "TEXT",
+          },
+        ],
+        "data": {
+          "abc": "1",
+          "pqr": "h1 test",
+        },
+        "tag": "h1",
+        "type": "ELEMENT",
+      },
+    ],
+    "data": {
+      "test": "hello world",
+      "xyz": true,
+    },
+    "tag": "p",
+    "type": "ELEMENT",
+  },
+]
+`;
+
+exports[`basic lexer tests > should correctly parse basic html strings: 'Nested tags, without attrs' 1`] = `
+[
+  {
+    "children": [
+      {
+        "content": ""Test "",
+        "type": "TEXT",
+      },
+      {
+        "children": [
+          {
+            "content": ""Hello World"",
+            "type": "TEXT",
+          },
+        ],
+        "data": {},
+        "tag": "h1",
+        "type": "ELEMENT",
+      },
+    ],
+    "data": {},
+    "tag": "p",
+    "type": "ELEMENT",
+  },
+]
+`;
+
+exports[`basic lexer tests > should correctly parse basic html strings: 'Single tag, with attrs' 1`] = `
+[
+  {
+    "children": [
+      {
+        "content": ""Test"",
+        "type": "TEXT",
+      },
+    ],
+    "data": {
+      "abc": true,
+      "test": "1",
+      "xyz": "hello world",
+    },
+    "tag": "p",
+    "type": "ELEMENT",
+  },
+]
+`;
+
+exports[`basic lexer tests > should correctly parse basic html strings: 'Single tag, without attrs' 1`] = `
+[
+  {
+    "children": [
+      {
+        "content": ""Test"",
+        "type": "TEXT",
+      },
+    ],
+    "data": {},
+    "tag": "p",
+    "type": "ELEMENT",
+  },
+]
+`;

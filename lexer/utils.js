@@ -123,7 +123,7 @@ function getAttr(inputString, startIdx, endIdx) {
 function createTextNode(text) {
   return {
     type: TEXT_NODE,
-    content: text,
+    content: JSON.stringify(text),
   };
 }
 

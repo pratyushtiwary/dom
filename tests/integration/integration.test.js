@@ -8,8 +8,7 @@ describe("Integration test", () => {
 	const currentDir = __dirname;
 	it("should correctly parse input html file", () => {
 		const inputHtml = fs.readFileSync(path.join(currentDir, "input.html"), "utf-8");
-		const snapshot = JSON.parse(fs.readFileSync(path.join(currentDir, "./snapshot.json"), "utf-8"));
 
-		expect(parseHtml(inputHtml)).toStrictEqual(snapshot);
+		expect(parseHtml(inputHtml)).toMatchSnapshot();
 	});
 })
