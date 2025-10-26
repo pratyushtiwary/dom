@@ -1,23 +1,31 @@
-const ANCHOR_START = "<";
-const ANCHOR_END = ">";
-const END_CHAR = "/";
-const TAG = "TAG";
-const ATTR = "ATTR";
-const VALUE = "VALUE";
-const CONTENT = "CONTENT";
-const NESTED = "NESTED"; // this is intentionally not exported, as it is used by other CONST and doesn't have any other usage
-const NESTED_TAG = NESTED + TAG;
-const NESTED_TAG_END = NESTED_TAG + END_CHAR;
-const NESTED_ANCHOR_START = NESTED + ANCHOR_START;
-const NESTED_ATTR = NESTED + ATTR;
-const ATTR_SEP = "=";
-const SEP = " ";
-const DOUBLE_QUOTE = '"';
-const SINGLE_QUOTE = "'";
+class Token {
+  name = undefined;
+  char = undefined;
+
+  constructor(name, char = "") {
+    this.name = name;
+    this.char = char;
+  }
+
+  toString() {
+    return this.name;
+  }
+};
+
+const ANCHOR_START = new Token("ANCHOR_START", "<");
+const ANCHOR_END = new Token("ANCHOR_END", ">");
+const END_CHAR = new Token("END_CHAR", "/");
+const TAG = new Token("TAG");
+const ATTR = new Token("ATTR");
+const VALUE = new Token("VALUE");
+const CONTENT = new Token("CONTENT");
+const ATTR_SEP = new Token("ATTR_SEP", "=");
+const SEP = new Token("SEP", " ");
+const DOUBLE_QUOTE = new Token("DOUBLE_QUOTE", '"');
+const SINGLE_QUOTE = new Token("SINGLE_QUOTE", "'");
+
 const TEXT_NODE = "TEXT";
 const ELEMENT_NODE = "ELEMENT";
-const USER_DEFINED_VOID_TAG = "USER_DEFINED_VOID_TAG";
-const USER_DEFINED_VOID_TAG_END_CHAR = USER_DEFINED_VOID_TAG + END_CHAR;
 
 const VOID_TAGS = new Set([
   "area",
@@ -41,22 +49,16 @@ const VOID_TAGS = new Set([
 module.exports = {
   ANCHOR_START,
   ANCHOR_END,
-  END_CHAR,
   TAG,
-  ATTR,
-  VALUE,
-  CONTENT,
-  NESTED_TAG,
-  NESTED_TAG_END,
-  NESTED_ANCHOR_START,
-  NESTED_ATTR,
-  ATTR_SEP,
   SEP,
+  ATTR,
+  END_CHAR,
+  CONTENT,
+  ATTR_SEP,
+  VALUE,
   DOUBLE_QUOTE,
   SINGLE_QUOTE,
+  VOID_TAGS,
   TEXT_NODE,
-  ELEMENT_NODE,
-  USER_DEFINED_VOID_TAG,
-  USER_DEFINED_VOID_TAG_END_CHAR,
-  VOID_TAGS
+  ELEMENT_NODE
 };

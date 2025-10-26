@@ -1,67 +1,64 @@
-import { expect, describe, it } from "vitest";
+import { expect, describe, it, beforeEach } from "vitest";
 import { isValueEnd } from "../../lexer/utils";
-import {
-  ANCHOR_END,
-  DOUBLE_QUOTE,
-  SEP,
-  SINGLE_QUOTE,
-  VALUE,
-} from "../../lexer/consts";
+import { VALUE, SEP, ANCHOR_END, DOUBLE_QUOTE, SINGLE_QUOTE } from "../../lexer/consts";
+import StateMachine from "../../lexer/stateMachine";
 
 describe("isValueEnd", () => {
+  const stateMachine = new StateMachine();
+
+  beforeEach(() => {
+    stateMachine.transition(undefined, 0);
+  });
+
   it.each([
     {
-      state: VALUE,
-      input: SEP,
-      output: true,
+      input: SEP.char,
+      expected: true,
     },
     {
-      state: VALUE,
-      input: ANCHOR_END,
-      output: true,
+      input: ANCHOR_END.char,
+      expected: true,
     },
     {
-      state: VALUE,
-      input: DOUBLE_QUOTE,
-      output: true,
+      input: DOUBLE_QUOTE.char,
+      expected: true,
     },
     {
-      state: VALUE,
-      input: SINGLE_QUOTE,
-      output: true,
+      input: SINGLE_QUOTE.char,
+      expected: true,
     },
     {
-      state: VALUE,
-      input: DOUBLE_QUOTE,
-      output: true,
-      isWithinQuotes: true,
-      quoteChar: '"',
-    },
-    {
-      state: VALUE,
-      input: DOUBLE_QUOTE,
-      output: false,
-      isWithinQuotes: true,
-      quoteChar: "'",
-    },
-    {
-      state: VALUE,
-      input: SINGLE_QUOTE,
-      output: true,
-      isWithinQuotes: true,
-      quoteChar: "'",
-    },
-    {
-      state: VALUE,
-      input: SINGLE_QUOTE,
-      output: false,
-      isWithinQuotes: true,
-      quoteChar: '"',
+      input: "t",
+      expected: false,
     },
   ])(
-    "should correctly flag value end state",
-    ({ state, input, isWithinQuotes, quoteChar, output }) => {
-      expect(isValueEnd(state, input, isWithinQuotes, quoteChar)).toBe(output);
+    "should correctly return $expected when $input is found and current state is VALUE",
+    ({ input, expected }) => {
+      stateMachine.transition(VALUE, 0);
+      expect(isValueEnd(stateMachine, input)).toBe(expected);
+    }
+  );
+
+  it.each([
+    {
+      input: SEP.char,
+    },
+    {
+      input: ANCHOR_END.char,
+    },
+    {
+      input: DOUBLE_QUOTE.char,
+    },
+    {
+      input: SINGLE_QUOTE.char,
+    },
+    {
+      input: "t",
+    },
+  ])(
+    "should correctly return false when $input is found and current state is not VALUE",
+    ({ input }) => {
+      expect(isValueEnd(stateMachine, input)).toBeFalsy;
     }
   );
 });

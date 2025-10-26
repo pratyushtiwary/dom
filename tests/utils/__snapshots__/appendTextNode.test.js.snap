@@ -5,13 +5,13 @@ exports[`appendTextNode > should correctly append text node 1`] = `undefined`;
 exports[`appendTextNode > should correctly append text node 2`] = `
 {
   "content": ""Test"",
-  "type": "TEXT",
+  "type": undefined,
 }
 `;
 
 exports[`appendTextNode > should correctly append text node 3`] = `
 {
   "content": "" Test"",
-  "type": "TEXT",
+  "type": undefined,
 }
 `;

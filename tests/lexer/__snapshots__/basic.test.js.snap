@@ -1,13 +1,6 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`basic lexer tests > should correctly parse basic html strings: 'Empty string' 1`] = `
-[
-  {
-    "content": """",
-    "type": "TEXT",
-  },
-]
-`;
+exports[`basic lexer tests > should correctly parse basic html strings: 'Empty string' 1`] = `[]`;
 
 exports[`basic lexer tests > should correctly parse basic html strings: 'Nested tags, with attrs' 1`] = `
 [
@@ -28,6 +21,8 @@ exports[`basic lexer tests > should correctly parse basic html strings: 'Nested 
           "abc": "1",
           "pqr": "h1 test",
         },
+        "hasEnding": true,
+        "isKnownVoid": false,
         "tag": "h1",
         "type": "ELEMENT",
       },
@@ -36,6 +31,8 @@ exports[`basic lexer tests > should correctly parse basic html strings: 'Nested 
       "test": "hello world",
       "xyz": true,
     },
+    "hasEnding": true,
+    "isKnownVoid": false,
     "tag": "p",
     "type": "ELEMENT",
   },
@@ -58,11 +55,15 @@ exports[`basic lexer tests > should correctly parse basic html strings: 'Nested 
           },
         ],
         "data": {},
+        "hasEnding": true,
+        "isKnownVoid": false,
         "tag": "h1",
         "type": "ELEMENT",
       },
     ],
     "data": {},
+    "hasEnding": true,
+    "isKnownVoid": false,
     "tag": "p",
     "type": "ELEMENT",
   },
@@ -83,6 +84,8 @@ exports[`basic lexer tests > should correctly parse basic html strings: 'Single 
       "test": "1",
       "xyz": "hello world",
     },
+    "hasEnding": true,
+    "isKnownVoid": false,
     "tag": "p",
     "type": "ELEMENT",
   },
@@ -99,6 +102,8 @@ exports[`basic lexer tests > should correctly parse basic html strings: 'Single 
       },
     ],
     "data": {},
+    "hasEnding": true,
+    "isKnownVoid": false,
     "tag": "p",
     "type": "ELEMENT",
   },

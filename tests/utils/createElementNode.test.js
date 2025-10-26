@@ -1,6 +1,5 @@
 import { expect, describe, it } from "vitest";
 import { createElementNode } from "../../lexer/utils";
-import { ELEMENT_NODE } from "../../lexer/consts";
 
 describe("createElementNode", () => {
   it.each([

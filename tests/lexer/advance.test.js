@@ -55,7 +55,7 @@ describe("advance lexer tests", () => {
     },
   ])(
     "should correctly parse basic html strings: $title",
-    ({ input, output }) => {
+    ({ input }) => {
       expect(parseHtml(input)).toMatchSnapshot();
     }
   );

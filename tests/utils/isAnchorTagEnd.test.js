@@ -1,9 +1,9 @@
 import { expect, describe, it, beforeEach } from "vitest";
-import { isAttrStart } from "../../lexer/utils";
-import { TAG, SEP, END_CHAR, ANCHOR_END } from "../../lexer/consts";
+import { isAnchorTagEnd } from "../../lexer/utils";
+import { END_CHAR, ANCHOR_END, SEP } from "../../lexer/consts";
 import StateMachine from "../../lexer/stateMachine";
 
-describe("isAttrStart", () => {
+describe("isAnchorTagEnd", () => {
   const stateMachine = new StateMachine();
 
   beforeEach(() => {
@@ -13,7 +13,7 @@ describe("isAttrStart", () => {
   it.each([
     {
       input: SEP.char,
-      expected: true,
+      expected: false,
     },
     {
       input: END_CHAR.char,
@@ -24,10 +24,10 @@ describe("isAttrStart", () => {
       expected: true,
     },
   ])(
-    "should correctly return $expected when $input is found and current state is TAG",
+    "should correctly return $expected when $input is found and current state is END_CHAR",
     ({ input, expected }) => {
-      stateMachine.transition(TAG, 0);
-      expect(isAttrStart(stateMachine, input)).toBe(expected);
+      stateMachine.transition(END_CHAR, 0);
+      expect(isAnchorTagEnd(stateMachine, input)).toBe(expected);
     }
   );
 
@@ -42,9 +42,9 @@ describe("isAttrStart", () => {
       input: ANCHOR_END.char,
     },
   ])(
-    "should correctly return false when $input is found and current state is not TAG",
+    "should correctly return false when $input is found and current state is not END_CHAR",
     ({ input }) => {
-      expect(isAttrStart(stateMachine, input)).toBeFalsy;
+      expect(isAnchorTagEnd(stateMachine, input)).toBeFalsy;
     }
   );
 });

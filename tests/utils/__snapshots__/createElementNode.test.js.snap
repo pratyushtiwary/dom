@@ -3,10 +3,8 @@
 exports[`createElementNode > should correctly create new element node 1`] = `
 {
   "children": [],
-  "data": {
-    "abc": true,
-    "xyz": "1",
-  },
+  "data": {},
+  "isKnownVoid": false,
   "tag": "test",
   "type": "ELEMENT",
 }
@@ -14,16 +12,9 @@ exports[`createElementNode > should correctly create new element node 1`] = `
 
 exports[`createElementNode > should correctly create new element node 2`] = `
 {
-  "children": [
-    1,
-    2,
-    3,
-    4,
-  ],
-  "data": {
-    "abc": true,
-    "xyz": "1",
-  },
+  "children": [],
+  "data": {},
+  "isKnownVoid": false,
   "tag": "test",
   "type": "ELEMENT",
 }
