@@ -37,8 +37,6 @@ const handleRecovery = (stateMachine) => {
 
 function parseHtml(inputString) {
   const tagStack = [];
-  //TODO: Add logic for recovery from malformed html
-  //TODO: Extract conditions into utils for better readability
   const state = new StateMachine();
 
   const outerChildren = [];
